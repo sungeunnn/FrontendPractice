@@ -1,0 +1,113 @@
+@import url(./css/reset.css);
+@import url(./css/theme.css);
+
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+header{
+  display:flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper{
+  display:flex;
+  flex-direction: row nowrap;
+  align-items: center;
+}
+
+.logo img{
+  width: var(--logo-size);
+  height: var(--logo-size);
+  margin:0 var(--spacing-xl);
+}
+
+.menu{
+  display: flex;
+  flex-direction: row nowrap;
+  line-height: var(--line-height);
+  font-size: var(--text-sm);
+  font-weight: bold;
+}
+
+.menuItem{
+  margin-right: var(--spacing-md);
+}
+
+.line a::after{
+  display: block;
+  content:"";
+  border-top: 5px solid var(--signature-color);
+}
+
+
+.menuItem a:hover{
+  color:var(--signature-color);
+}
+
+.member{
+  display: flex;
+  flex-direction: row nowrap;
+  margin:var(--spacing-xl);
+  font-size: var(--text-sm);
+  font-weight: bold;
+
+}
+
+.member li{
+  margin: 0 var(--spacing-xs);
+}
+
+.findStore{
+  margin-right: vaR(--spacing-base)
+}
+
+.findStore i{
+  margin-right: var(--spacing-xxs);
+}
+
+.button{
+  padding:var(--spacing-xxs) var(--spacing-sm) ;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.join{
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
+/* main */
+.mainTitleWrapper{
+  background-color: greenyellow;
+}
+
+.rewards{
+  background-color: lightgoldenrodyellow;
+}
+
+.start{
+  background-color: lightgreen;
+}
+
+.useStar{
+  background-color: lightpink;
+}
+
+.benefit{
+  background-color: lightgrey;
+}
+
+.earnStars{
+  background-color: skyblue;
+}
