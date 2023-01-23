@@ -3,6 +3,7 @@
 
 body {
   font-size: var(--text-sm);
+  width: var(--container-width);
 }
 
 /* clip-path 모양대로 잘라내는 -> inset() : 사각형 정의 */
@@ -102,6 +103,7 @@ header {
 /* mainTitleWrapper */
 .mainTitleWrapper {
   position: sticky;
+  z-index: 10;
   top: 0;
   background-color: var(--mainTitle-color);
   padding: var(--spacing-base) 7.125rem;
@@ -119,9 +121,49 @@ header {
 /* rewards */
 
 .rewards {
+  display: flow-root;
   background-color:var( --rewards-color);
+  /* padding: 7.825rem 0 ; */
 }
 
+.rewardsContents{
+  height:12.5rem;
+  float: left;
+  margin: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.rewardsContentTitle{
+  width: 15rem;
+  font-size: var(--text-xl);
+  font-weight: bold;
+  margin-bottom: var(--spacing-base);
+}
+
+.rewardsContentSub{
+  font-size: var(--text-base);
+  font-weight: bold;
+}
+
+.joinNow{
+  display: block;
+  width: 4.5rem;
+  margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+  background-color: var(--signature-color);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color:var( --color-white);
+}
+
+.joinApp{
+  text-decoration: underline;
+}
+
+.rewardsVisual{
+  float: right;
+  width: 35rem;
+  height: 28.5rem;
+  background: url("img/starbucks_visual.png") no-repeat right -280px center/cover;
+}
 
 
 
